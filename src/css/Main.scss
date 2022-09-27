@@ -1,0 +1,89 @@
+    .MainSlide {
+    position: relative;
+    padding: 0 0 0;
+
+    .slick-track {
+        transition-duration: 0.5ms;
+    }
+
+
+    .itm {
+        position: relative;
+        height: calc(100vh - 130px);
+        color: #333;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.itm01 {
+            background-image: url(../../public/assets/images/main_01.png);
+        }
+
+        &.itm02 {
+            background-image: url(../../public/assets/images/main_02.png);
+        }
+
+        &.itm03 {
+            background-image: url(../../public/assets/images/main_03.png);
+        }
+        &.itm04 {
+            background-image: url(../../public/assets/images/main_04.png);
+        }
+        &.itm05 {
+            background-image: url(../../public/assets/images/main_05.png);
+        }
+
+        .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            word-break: keep-all;
+            white-space: pre-line;
+
+            strong {
+                display: block;
+                margin: 0 0 23px 0;
+                font-size: 49px;
+                font-weight: 700;
+                line-height: 65px;
+
+            }
+
+            p {
+                margin: 0 0 2rem 0;
+                font-size: 18px;                
+                line-height: 30px;
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 0.5rem;
+
+            button {
+                width: 40px;
+                height: 10px;
+                border-radius: 5px;
+                background:#999;
+                font-size: 0;
+                border: none;
+                outline: none;
+
+
+            }
+
+            &.slick-active button {
+                background:#e7e76e;
+            }
+        }
+    }
+}

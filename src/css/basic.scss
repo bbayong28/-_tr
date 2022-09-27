@@ -1,0 +1,59 @@
+$main-color: #032777;
+$color-gray : #dddddd;
+$font-small : 13px;
+$font-midume : 17px;
+$font-big : 20px;
+
+body {
+    overflow-x: hidden;
+}
+
+.Wrapper {
+    min-width: 1170px;
+}
+
+.inner {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.Header {
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 130px;
+            height: 50px;
+        }
+        ul {
+            display: flex;
+            gap: 50px;
+            line-height: 90px;
+            font-size: $font-midume;
+            font-weight: 500;
+        }
+
+        a {
+            position: relative;
+            display: block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                transform: translateX(-50%);
+                background: $main-color;
+            }
+
+            &.active::after {
+                width: 100%;
+                transition: 0.3s;
+            }
+        }
+    }
+}
