@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom"
 
-const MainContent = ({ word }) => {
-    //const {word} = props;
+const ProductInfo = () => {
     return (
-        <section className="MainContent">
+        <section className="ProductInfo">
             <div className="inner">
                 {
-                    word.map((con, idx) => {
+                    .map((con, idx) => {
                         return (
                             <Link to={con.link} key={idx}>
                                 <figure key={con.id}>
@@ -27,4 +26,4 @@ const MainContent = ({ word }) => {
     )
 }
 
-export default MainContent;
+export default ProductInfo;

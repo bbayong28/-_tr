@@ -9,7 +9,7 @@
 
     .itm {
         position: relative;
-        height: calc(100vh - 130px);
+        height: 700px;
         color: #333;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,11 +18,9 @@
         &.itm01 {
             background-image: url(../../public/assets/images/main_01.png);
         }
-
         &.itm02 {
             background-image: url(../../public/assets/images/main_02.png);
         }
-
         &.itm03 {
             background-image: url(../../public/assets/images/main_03.png);
         }
@@ -55,35 +53,62 @@
                 font-size: 18px;                
                 line-height: 30px;
             }
+            a{  
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 500;
+                border: 1px solid #000;
+                padding: 10px 20px;
+            }
         }
     }
 
     .slick-dots {
         position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 50px;
+        left: 27%;
+        transform: translate(-50%,-50%);
         text-align: center;
+        z-index: 999;
 
         li {
             display: inline-block;
             margin: 0 0.5rem;
 
             button {
-                width: 40px;
-                height: 10px;
-                border-radius: 5px;
-                background:#999;
+                width: 10px;
+                height: 10px;                      
+                border-radius: 50%;
+                background:rgb(197, 196, 196);
                 font-size: 0;
                 border: none;
                 outline: none;
-
-
+                transition: 0.5s;
             }
 
-            &.slick-active button {
-                background:#e7e76e;
+            &.slick-active button {                
+                width: 25px;
+                height: 10px;                
+                border-radius: 10px;
+                background:#f0e76c;
             }
+        }
+    }
+
+    .arrow{
+        position: absolute;
+        bottom: 45px;
+        left: 27%;
+        transform: translate(-50%,-50%);
+        color: #555;
+        
+
+        .left {
+            margin: 0 0 0 0;
+        }
+
+        .right {
+            margin: 0 0 0 150px;
         }
     }
 }

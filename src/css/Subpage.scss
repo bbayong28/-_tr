@@ -89,7 +89,7 @@
     .bg{
         position: relative;
         height: 300px;
-        background: url(../../public/assets/images/main_slider01.jpg) no-repeat right top / cover;
+        background: url(../../public/assets/images/main_01.png) no-repeat right top / cover;
         border-left: 5px solid #369;
         padding: 100px 0 0 100px;        
         margin-bottom: 50px;
@@ -150,8 +150,18 @@
 .Footer{
     border-top: 1px solid #ddd;
     padding: 50px 0;
-    text-align: center;
+    text-align: left;
     background: #f4f4f4;
+    .ft_top{
+        margin-bottom: 20px;
+    }
+    .ft__con{
+        margin-bottom: 10px;
+    }
+    span{
+        font-size: 12px;
+        font-weight: 500;
+    }
     li{
         display: inline-block;
         margin: 0 5px;

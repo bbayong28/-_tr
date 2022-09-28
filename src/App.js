@@ -27,11 +27,10 @@ const App = () => {
 
 
   const COMPANY = {
-    name : "깔끔이청소", 
-    address : "부산광역시 북구 만덕2로 14 상가동 제314호",
-    number: "606-11-45081",
-    tel: "051-331-3354",
-    email: " jjs3354@naver.com",
+    name : "(주)카카오뱅크 윤호영", 
+    number: "375-88-00197",
+    tel: "1599-333(해외 +82-2-6420-333)",
+    copy : "KakaoBank Corp. All rights reserved.",
   }
   
   return (
