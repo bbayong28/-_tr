@@ -9,19 +9,15 @@ const Article = ({content,num}) => {
       <figure>
         <div className="bg">
           <div className="case">
-
-
             {
               num === 0
                 ? <div className="tit__logo">
-                   <img src={process.env.PUBLIC_URL + '/assets/images/logo.png'} alt="" />
+                  <img src={process.env.PUBLIC_URL + '/assets/images/logo.png'} alt="" />
                   </div>
                 : <h2>
                   {content[num].tit}
                 </h2>
             }
-
-
               <p>
                 {content[num].con}
               </p>
