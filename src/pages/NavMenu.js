@@ -6,7 +6,7 @@ const NAVLINK = [
     { content: "IR투자정보", link: "/sub02" },
     { content: "상품안내", link: "/sub03" },
     { content: "고객센터", link: "/sub04" },
-    { content: "공인인증서 센터", link: "/sub05" },
+    { content: "서류제출", link: "/sub05" },
 ]
 const NavMenu = () => {
     return (

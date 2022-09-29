@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Sub01.scss'
+import '../css/Sub.scss'
 const Menu = [
   {id:0, title:'브랜드', link:'/'},
   {id:1, title:'주주사소개', link:'/'},

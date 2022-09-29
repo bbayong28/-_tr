@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Sub02.scss'
+import '../css/Sub.scss'
 import { FiDownload } from "react-icons/fi";
 
 const GIST = [
