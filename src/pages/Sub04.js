@@ -5,10 +5,6 @@ import { FiChevronDown } from "react-icons/fi";
 
 const Sub04 = ({ content }) => {  
   const num = 3
- /*  const [display, setDisplay] = useState(false);
-  const clickHandler = () => { 
-    setDisplay(!display);
-  } */
   return (    
      <section className="Sub04">  
       <div className="top_bg">
