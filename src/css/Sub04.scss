@@ -1,0 +1,33 @@
+.qbox{
+    position: relative;
+    min-height: 350px;
+
+    .list{
+        float: left;
+        width: 100%;
+        margin-bottom: -1px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        background-color: #fff;
+        .question{
+            padding: 20px;
+            a{
+               display: flex; 
+               span{
+                flex: 1;
+               }
+               p{
+                flex: 6;
+                font-size: 16px;
+                font-weight: 600;
+               }
+            }
+        }
+        .answer{
+            display: none;
+        }
+        &.on .answer{
+            display: block;
+        }
+    }
+}

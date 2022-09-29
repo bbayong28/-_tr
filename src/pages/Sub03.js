@@ -1,15 +1,15 @@
 import React from 'react'
 import '../css/Sub01.scss'
 
-const Sub03 = () => {
+const Sub03 = ({content}) => {
+  const num = 2
   return (
     <section className="Sub03">
       <div className="top_bg">
-        <img src={process.env.PUBLIC_URL + '/assets/images/sub01_03.png'} alt="" />
+        <img src={process.env.PUBLIC_URL +  content[num].src } alt="" />
         <div className="txt">
-          <strong>언제든지 이용할 수 있는 뱅크</strong>
-          <p>영업점에 방문없이 계좌개설, 대출신청, 해외송금, 증명서 발급까지</p>
-          <p>언제든 필요한 은행 업무를 카카오뱅크 모바일앱을 통해 이용해보세요.</p>
+          <strong>{ content[num].tit}</strong>
+          <p>{ content[num].des }</p>
         </div>
       </div>
       <div className="container">        
