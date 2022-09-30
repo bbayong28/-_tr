@@ -1,11 +1,6 @@
 import React from 'react'
 import '../css/Sub.scss'
-const Menu = [
-  {id:0, title:'브랜드', link:'/'},
-  {id:1, title:'주주사소개', link:'/'},
-  {id:2, title:'오시는길', link:'/'},
-  {id:3, title:'제휴문의', link:'/'}
-]
+
 
 const Sub01 = ({ content }) => {
   const num = 0;

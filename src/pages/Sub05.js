@@ -26,27 +26,30 @@ const Sub05 = ({ content }) => {
           <div className="dumy">
             <div className="left">
               <figure className="intxt">
-                <p>01</p>
+                <span>01</span>
                 <p>로그인</p>
               </figure>              
             </div>
-            <FiChevronRight />
+            <FiChevronRight style={{ fontSizd: '60px' }} />
             <div className="middle">
               <figure className="intxt">
-                <p>02</p>
+                <span>02</span>
                 <p>공동인증서 인증</p>
               </figure>              
             </div>          
             <FiChevronRight />    
             <div className="right">     
               <figure className="intxt">
-                <p>03</p>
+                <span>03</span>
                 <p>서류제출 완료</p>
               </figure>       
             </div>    
           </div> 
           <h4>로그인을 진행해주세요.</h4>
-          <a className='login' href='#!'>로그인</a>
+          <div className="log">
+            <a className='login' href='#!'>로그인</a>
+          </div>
+          
         </div>
       </div>
     </section>

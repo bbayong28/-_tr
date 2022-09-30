@@ -135,6 +135,7 @@ h3{
     }
 }
 .Sub04{
+    white-space: pre-wrap;
     .container{
         .what{
             text-align: center;
@@ -172,24 +173,31 @@ h3{
             width: 100%;
             margin-bottom: -1px;
             border-top: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            background-color: #fff;
+            border-bottom: 1px solid #ddd;            
+            background: #f7f7f7;
             .question{
-                padding: 20px;
                 a{
-                    display: flex; 
+                    display: flex;                     
+                    padding: 20px;
                 span{
                     flex: 1;
                 }
                 p{
                     flex: 6;
                     font-size: 16px;
-                    font-weight: 600;
+                    font-weight: 700;
                 }
                 }
             }
             .answer{
                 display: none;
+                text-align: center;
+                padding: 20px;
+                border-top:1px solid #ddd ;                
+                background-color: #fff;
+                line-height: 1.25;
+                font-size: 14px;
+                font-weight: 500;
             }
             &.on .answer{
                 display: block;
@@ -203,9 +211,13 @@ h3{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             border-bottom:1px solid #ddd;
             padding-bottom: 100px;
+
+            svg{
+                font-size: 50px;
+            }
             .left,
             .middle,
             .right{
@@ -219,13 +231,18 @@ h3{
                 background: #fff;
                 .intxt{
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
+                    top: 40%;
+                    left: 0;
                     width: 100%;
+                    span{
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 300;                        
+                        margin-bottom: 15px;
+                    }
                     p{
                         font-size: 21px;
                         font-weight: 600;
-                        margin-bottom: 30px;
                     }
                 }               
             }
@@ -236,15 +253,26 @@ h3{
             }
         }
         h4{
+            font-size: 21px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .log{
             text-align: center;
         }
         .login{
             display: inline-block;
             padding: 10px 30px;
-            background: #ff0;
-            text-align: center;
-            margin: 0 auto;
+            background: #555;
+            font-size: 25px;
+            font-weight: 500;
+            color: #fff;
+            &:hover{                
+                background:rgb(246, 228, 62);        
+                color: #555;
 
+            }
         }
     }
 }
